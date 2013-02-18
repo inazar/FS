@@ -6,5 +6,5 @@ function _onLoad () {
 		production: "http://forstartersapp.com"
 	};
 
-	window.location=baseUrl.local+"/start.html";
+	window.location=baseUrl.devel+"/start-2.4.html";
 }
