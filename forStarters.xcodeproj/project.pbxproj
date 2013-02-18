@@ -555,7 +555,9 @@
 				);
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
+				VERSIONING_SYSTEM = "";
 			};
 			name = Debug;
 		};
@@ -595,7 +597,9 @@
 				);
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
+				VERSIONING_SYSTEM = "";
 			};
 			name = Release;
 		};
