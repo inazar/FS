@@ -56,5 +56,16 @@
         <plugin name="InAppBrowser" value="CDVInAppBrowser" />
     </plugins>
 
-    <access origin="*" />
+    <access origin="forstartersapp.com" />
+	<access origin="qbixstaging.com" />
+	<access origin="macbook.local" />
+	<access origin="*.facebook.net" />
+	<access origin="*.facebook.com" />
+	<access origin="api.geonames.org" />
+	<access origin="maps.google.com" />
+	<access origin="*.googleapis.com" />
+	<access origin="*.gmaptiles.co.kr" />
+	<access origin="*.gstatic.com" />
+	<access origin="*.sdk.testflightapp.com" />
+
 </cordova>
