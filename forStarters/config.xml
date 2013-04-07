@@ -67,5 +67,6 @@
 	<access origin="*.gmaptiles.co.kr" />
 	<access origin="*.gstatic.com" />
 	<access origin="*.sdk.testflightapp.com" />
+    <access origin="*.stripe.com" />
 
 </cordova>
