@@ -19,7 +19,7 @@
 
 //
 //  AppDelegate.m
-//  test
+//  forStarters
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
@@ -45,7 +45,7 @@
 
     int cacheSizeMemory = 8 * 1024 * 1024; // 8MB
     int cacheSizeDisk = 32 * 1024 * 1024; // 32MB
-    NSURLCache* sharedCache = [[NSURLCache alloc] initWithMemoryCapacity:cacheSizeMemory diskCapacity:cacheSizeDisk diskPath:@"nsurlcache"];
+    NSURLCache* sharedCache = [[[NSURLCache alloc] initWithMemoryCapacity:cacheSizeMemory diskCapacity:cacheSizeDisk diskPath:@"nsurlcache"] autorelease];
     [NSURLCache setSharedURLCache:sharedCache];
 
     self = [super init];
@@ -65,7 +65,7 @@
     self.window.autoresizesSubviews = YES;
 
     self.viewController = [[[MainViewController alloc] init] autorelease];
-    //  self.viewController.useSplashScreen = YES;
+//    self.viewController.useSplashScreen = YES;
 
     // Set your app's start page by setting the <content src='foo.html' /> tag in config.xml.
     // If necessary, uncomment the line below to override it.
@@ -81,7 +81,7 @@
 }
 
 // this happens while we are running ( in the background, or from within our own app )
-// only valid if test-Info.plist specifies a protocol to handle
+// only valid if forStarters-Info.plist specifies a protocol to handle
 - (BOOL)application:(UIApplication*)application handleOpenURL:(NSURL*)url
 {
     if (!url) {
@@ -99,8 +99,8 @@
 }
 
 // repost the localnotification using the default NSNotificationCenter so multiple plugins may respond
-- (void)           application:(UIApplication*)application
-   didReceiveLocalNotification:(UILocalNotification*)notification
+- (void)            application:(UIApplication*)application
+    didReceiveLocalNotification:(UILocalNotification*)notification
 {
     // re-post ( broadcast )
     [[NSNotificationCenter defaultCenter] postNotificationName:CDVLocalNotification object:notification];
