@@ -39,6 +39,8 @@
 		78379DBD1712040B00691FD1 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78379DBC1712040B00691FD1 /* Icon-72@2x.png */; };
 		78379DC31712043500691FD1 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 78379DC21712043500691FD1 /* Default-Landscape~ipad.png */; };
 		78379DC51712043F00691FD1 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 78379DC41712043F00691FD1 /* Default-Landscape@2x~ipad.png */; };
+		78476FA21718026F00F7BD54 /* PushNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 78476FA11718026F00F7BD54 /* PushNotification.m */; };
+		78476FA51718050D00F7BD54 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 78476FA41718050D00F7BD54 /* OpenUDID.m */; };
 		785CA23717120351004A8906 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 785CA23617120351004A8906 /* Icon.png */; };
 		785CA23A1712036E004A8906 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 785CA2381712035D004A8906 /* Icon@2x.png */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
@@ -101,6 +103,10 @@
 		78379DC01712042800691FD1 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		78379DC21712043500691FD1 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		78379DC41712043F00691FD1 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		78476FA01718026F00F7BD54 /* PushNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotification.h; sourceTree = "<group>"; };
+		78476FA11718026F00F7BD54 /* PushNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNotification.m; sourceTree = "<group>"; };
+		78476FA31718050D00F7BD54 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
+		78476FA41718050D00F7BD54 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
 		785CA23617120351004A8906 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		785CA2381712035D004A8906 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* forStarters-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "forStarters-Info.plist"; path = "../forStarters-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -257,6 +263,7 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				78476F9F1718026F00F7BD54 /* PushNotification */,
 			);
 			name = Plugins;
 			path = forStarters/Plugins;
@@ -290,6 +297,17 @@
 				30A0434614DC770100060A13 /* Localizable.strings */,
 			);
 			path = se.lproj;
+			sourceTree = "<group>";
+		};
+		78476F9F1718026F00F7BD54 /* PushNotification */ = {
+			isa = PBXGroup;
+			children = (
+				78476FA31718050D00F7BD54 /* OpenUDID.h */,
+				78476FA41718050D00F7BD54 /* OpenUDID.m */,
+				78476FA01718026F00F7BD54 /* PushNotification.h */,
+				78476FA11718026F00F7BD54 /* PushNotification.m */,
+			);
+			path = PushNotification;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,6 +430,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				78476FA21718026F00F7BD54 /* PushNotification.m in Sources */,
+				78476FA51718050D00F7BD54 /* OpenUDID.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

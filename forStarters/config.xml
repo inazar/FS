@@ -59,6 +59,7 @@
         <plugin name="Battery" value="CDVBattery"></plugin>
         <plugin name="Globalization" value="CDVGlobalization"></plugin>
         <plugin name="InAppBrowser" value="CDVInAppBrowser"></plugin>
+        <plugin name="PushNotification" value="PushNotification"></plugin>
     </plugins>
 
     <access origin="forstartersapp.com" />
