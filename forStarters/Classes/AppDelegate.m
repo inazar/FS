@@ -81,7 +81,7 @@
     
     // PushNotification - Handle launch from a push notification
     NSDictionary* userInfo = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
-    if(userInfo) {
+    if (userInfo) {
         PushNotification *pushHandler = [self.viewController getCommandInstance:@"PushNotification"];
         NSMutableDictionary* mutableUserInfo = [userInfo mutableCopy];
         [mutableUserInfo setValue:@"1" forKey:@"applicationLaunchNotification"];
