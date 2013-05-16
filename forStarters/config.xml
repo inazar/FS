@@ -35,9 +35,7 @@
     <preference name="MediaPlaybackRequiresUserAction" value="false" />
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="BackupWebStorage" value="cloud" />
-
     <content src="index.html" />
-
     <plugins>
         <plugin name="Device" value="CDVDevice"></plugin>
         <plugin name="Logger" value="CDVLogger"></plugin>
@@ -59,7 +57,6 @@
         <plugin name="InAppBrowser" value="CDVInAppBrowser"></plugin>
         <plugin name="PushNotification" value="PushNotification"></plugin>
     </plugins>
-
     <access origin="forstartersapp.com" />
 	<access origin="qbixstaging.com" />
 	<access origin="macbook.local" />
@@ -72,5 +69,4 @@
 	<access origin="*.gstatic.com" />
 	<access origin="*.sdk.testflightapp.com" />
     <access origin="*.stripe.com" />
-
 </widget>
