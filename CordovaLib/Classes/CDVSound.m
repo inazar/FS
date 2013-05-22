@@ -273,9 +273,6 @@
     } else {
         audioFile = [[self soundCache] objectForKey:mediaId];
         audioFile.volume = volume;
-        if (audioFile.player) {
-            audioFile.player.volume = [volume floatValue];
-        }
         [[self soundCache] setObject:audioFile forKey:mediaId];
     }
 

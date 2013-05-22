@@ -227,9 +227,10 @@ NSString* const kCDVAssetsLibraryPrefix = @"assets-library://";
     NSURL* testUri = [NSURL URLWithString:strUri];
     CDVPluginResult* result = nil;
 
-    if (!testUri) {
+    if (!testUri || ![testUri isFileURL]) {
+        // issue ENCODING_ERR
         result = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsInt:ENCODING_ERR];
-    } else if ([testUri isFileURL]) {
+    } else {
         NSFileManager* fileMgr = [[NSFileManager alloc] init];
         NSString* path = [testUri path];
         // NSLog(@"url path: %@", path);
@@ -261,13 +262,7 @@ NSString* const kCDVAssetsLibraryPrefix = @"assets-library://";
             // return NOT_FOUND_ERR
             result = [CDVPluginResult resultWithStatus:CDVCommandStatus_IO_EXCEPTION messageAsInt:NOT_FOUND_ERR];
         }
-    } else if ([strUri hasPrefix:@"assets-library://"]) {
-        NSDictionary* fileSystem = [self getDirectoryEntry:strUri isDirectory:NO];
-        result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:fileSystem];
-    } else {
-        result = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsInt:ENCODING_ERR];
     }
-
     if (result != nil) {
         [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
     }
