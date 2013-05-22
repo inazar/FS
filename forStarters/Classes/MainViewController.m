@@ -105,7 +105,14 @@
 {
     // Black base color for background matches the native apps
     theWebView.backgroundColor = [UIColor blackColor];
-
+        
+    /* START BLOCK */ // <--- Added for resource caching
+    // set cookie with the path to bundled www folder
+    NSString* startFilePath = [NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], self.wwwFolderName ];
+    // Don't use [commandDelegate evalJs] here since it relies on cordova.js being loaded already.
+    [self.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"document.cookie='appCachePath=%@';", startFilePath]];
+    /* STOP BLOCK */
+    
     return [super webViewDidFinishLoad:theWebView];
 }
 
