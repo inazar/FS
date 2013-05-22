@@ -40,6 +40,7 @@
 		78476FA71718348800F7BD54 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 78379DC01712042800691FD1 /* Default-Portrait@2x~ipad.png */; };
 		78476FA9171847FE00F7BD54 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 78379DB4171203E100691FD1 /* Default.png */; };
 		78476FAA1718480600F7BD54 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78379DB6171203EA00691FD1 /* Default@2x.png */; };
+		78572C83174D18380001CA84 /* FSURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 78572C82174D18380001CA84 /* FSURLCache.m */; };
 		785CA23717120351004A8906 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 785CA23617120351004A8906 /* Icon.png */; };
 		785CA23A1712036E004A8906 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 785CA2381712035D004A8906 /* Icon@2x.png */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
@@ -103,6 +104,8 @@
 		78476FA11718026F00F7BD54 /* PushNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNotification.m; sourceTree = "<group>"; };
 		78476FA31718050D00F7BD54 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
 		78476FA41718050D00F7BD54 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
+		78572C81174D18380001CA84 /* FSURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSURLCache.h; sourceTree = "<group>"; };
+		78572C82174D18380001CA84 /* FSURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSURLCache.m; sourceTree = "<group>"; };
 		785CA23617120351004A8906 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		785CA2381712035D004A8906 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* forStarters-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "forStarters-Info.plist"; path = "../forStarters-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 				302D95F014D2391D003F00A1 /* MainViewController.xib */,
 				1D3623240D0F684500981E51 /* AppDelegate.h */,
 				1D3623250D0F684500981E51 /* AppDelegate.m */,
+				78572C81174D18380001CA84 /* FSURLCache.h */,
+				78572C82174D18380001CA84 /* FSURLCache.m */,
 			);
 			name = Classes;
 			path = forStarters/Classes;
@@ -424,6 +429,7 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				78476FA21718026F00F7BD54 /* PushNotification.m in Sources */,
 				78476FA51718050D00F7BD54 /* OpenUDID.m in Sources */,
+				78572C83174D18380001CA84 /* FSURLCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
